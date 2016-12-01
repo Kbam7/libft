@@ -21,12 +21,12 @@ int	ft_atoi_hex(const char *nptr)
 	i = 0;
 	while (ft_isdigit(nptr[i]) ||
 		(ft_toupper(nptr[i] >= 'A' && ft_toupper(nptr[i]) <= 'F')))
-		{
-			res *= 16;
-			if (nptr[i] < 'A')
-				res += (nptr[i++] - '0');
-			else
-				res += (10 + (nptr[i++] - 'A'));
-		}
+	{
+		res *= 16;
+		if (nptr[i] < 'A')
+			res += (nptr[i++] - '0');
+		else
+			res += (10 + (nptr[i++] - 'A'));
+	}
 	return (res);
 }
